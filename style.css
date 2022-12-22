@@ -20,6 +20,24 @@ header {
     font-weight: 900;
 }
 
+.projects a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+.projects :hover {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    background: #000000;
+    padding: 8px;
+    transition: ease-in 0.25s;
+}
+
+
 
 .container {
     display: flex;
@@ -30,8 +48,27 @@ header {
 .bio {
     max-width: 900px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 30px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 5px;
+}
+
+@media(max-width: 820px) {
+    .container {
+        margin: 5px;
+    }
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 .message > h1, .content {
@@ -46,8 +83,8 @@ header {
 }
 
 .link {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 90px;
     background: grey;
     display: flex;
     justify-content: center;
@@ -56,6 +93,10 @@ header {
     text-decoration: none;
     font-size: 30px;
     color: #000000;
+}
+
+.twitter .linked-in .github .gmail :hover {
+    background: rgb(255, 255, 0);
 }
 
 .link > a {
@@ -77,4 +118,13 @@ header {
 
 .gmail {
     background: #AA2211;
+}
+
+.tweets {
+    display: flex;
+    gap: 40px;
+}
+
+.coming-soon {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
